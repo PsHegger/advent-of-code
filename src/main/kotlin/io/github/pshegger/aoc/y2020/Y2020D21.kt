@@ -13,7 +13,7 @@ class Y2020D21 : BaseSolver() {
         val nonAllergenic = foods.fold(emptySet<String>()) { acc, food -> acc + food.ingredients } -
                 possibilities.values.fold(emptySet()) { acc, set -> acc + set }
 
-        return foods.sumBy { food -> food.ingredients.count { it in nonAllergenic } }
+        return foods.sumOf { food -> food.ingredients.count { it in nonAllergenic } }
     }
 
     override fun part2(): String {

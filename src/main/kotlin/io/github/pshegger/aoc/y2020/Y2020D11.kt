@@ -21,7 +21,7 @@ class Y2020D11 : BaseSolver() {
             }
             prev = n
         }
-        return prev.sumBy { row -> row.count { it == '#' } }
+        return prev.sumOf { row -> row.count { it == '#' } }
     }
 
     private fun List<String>.calculateVision(adjacentMode: Boolean): Map<Coordinate, List<Coordinate>> =

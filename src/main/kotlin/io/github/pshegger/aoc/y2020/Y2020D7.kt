@@ -21,7 +21,7 @@ class Y2020D7 : BaseSolver() {
     }
 
     private fun Map<String, List<Pair<Int, String>>>.bagCount(containerColor: String): Int =
-        (this[containerColor] ?: error("Color `$containerColor` missing from rules")).sumBy { (count, color) ->
+        (this[containerColor] ?: error("Color `$containerColor` missing from rules")).sumOf { (count, color) ->
             count * (bagCount(color) + 1)
         }
 

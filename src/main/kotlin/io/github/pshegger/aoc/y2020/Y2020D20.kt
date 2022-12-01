@@ -29,7 +29,7 @@ class Y2020D20 : BaseSolver() {
     override fun part2(): Int {
         val seaMonsterTiles = assembledImage.seaMonsterCount() * seaMonster.size
 
-        return assembledImage.fields.sumBy { row -> row.count { it == '#' } } - seaMonsterTiles
+        return assembledImage.fields.sumOf { row -> row.count { it == '#' } } - seaMonsterTiles
     }
 
     private fun arrangeImage(): Tile {

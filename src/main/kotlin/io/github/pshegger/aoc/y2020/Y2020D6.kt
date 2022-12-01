@@ -8,10 +8,10 @@ class Y2020D6 : BaseSolver() {
     override val day = 6
 
     override fun part1(): Int =
-        parseInput().sumBy { it.second.toSet().size }
+        parseInput().sumOf { it.second.toSet().size }
 
     override fun part2(): Int =
-        parseInput().sumBy { group ->
+        parseInput().sumOf { group ->
             group.second.toSet().count { x -> group.second.count { it == x } == group.first }
         }
 
