@@ -10,7 +10,11 @@ fun downloadInputIfMissing(year: Int, day: Int) {
 
     if (!file.exists()) {
         file.createNewFile()
-        val session = System.getenv("AOC_SESSION") ?: throw IllegalStateException("AOC_SESSION is not defined")
+        val session = System.getenv("AOC_SESSION")
+        if (session == null) {
+            file.delete()
+            throw IllegalStateException("AOC_SESSION is not defined")
+        }
         val url = URL("https://adventofcode.com/$year/day/$day/input")
         val connection = url.openConnection() as HttpURLConnection
         connection.setRequestProperty("cookie", "session=$session")
