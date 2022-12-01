@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.4.21"
+    kotlin("jvm") version "1.7.20"
     application
 }
 
@@ -23,10 +23,14 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile>() {
+tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+tasks.withType<JavaExec> {
+    environment("AOC_SESSION", providers.gradleProperty("aoc.session").get())
+}
+
 application {
-    mainClassName = "io.github.pshegger.aoc.MainKt"
+    mainClass.set("io.github.pshegger.aoc.MainKt")
 }
