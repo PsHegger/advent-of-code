@@ -8,3 +8,5 @@ fun String.md5(): String {
     val digest = md.digest()
     return digest.toHex()
 }
+
+fun String.toExtractor() = RegExtractor(this)
