@@ -11,3 +11,20 @@ fun Iterable<String>.splitByBlank(): List<List<String>> =
             acc.dropLast(1) + listOf(acc.last() + str)
         }
     }
+
+fun <T> Iterable<Iterable<T>>.findCommons() = map { it.toSet() }
+    .reduce { a, b -> a.intersect(b) }
+
+fun <T> Iterable<T>.permutations(): List<List<T>> {
+    fun go(ls: List<T>): List<List<T>> {
+        return when (ls.size) {
+            0, 1 -> listOf(ls)
+            else -> ls.flatMap { item -> go(ls - item).map { listOf(item) + it } }
+        }
+    }
+
+    return go(this.toList())
+}
+
+fun <R> Iterable<String>.extractAll(extractor: RegExtractor, block: (List<String>) -> R): List<R> =
+    mapNotNull { extractor.extract(it, block) }
