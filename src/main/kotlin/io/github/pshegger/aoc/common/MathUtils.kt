@@ -21,3 +21,23 @@ fun extendedGCD(a: Long, b: Long): Pair<Long, Long> {
     }
     return Pair(oldS, oldT)
 }
+
+/**
+ * Generate all the possible lists of integers, where the list contains exactly [splitCount] number of elements,
+ * and the sum of the elements is [numberToSplit].
+ *
+ * Example:
+ * [splitCount] = 2
+ * [numberToSplit] = 5
+ * result = [[0, 5], [1, 4], [2, 3], [3, 2], [4, 1], [5, 0]]
+ */
+fun generateSplits(splitCount: Int, numberToSplit: Int): List<List<Int>> =
+    if (splitCount == 1) {
+        listOf(listOf(numberToSplit))
+    } else {
+        (0..numberToSplit)
+            .flatMap { a ->
+                generateSplits(splitCount - 1, numberToSplit - a)
+                    .map { listOf(a) + it }
+            }
+    }
