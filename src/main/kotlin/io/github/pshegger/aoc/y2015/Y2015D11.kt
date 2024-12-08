@@ -1,7 +1,6 @@
 package io.github.pshegger.aoc.y2015
 
 import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.memoize
 import kotlin.math.pow
 
 class Y2015D11 : BaseSolver() {

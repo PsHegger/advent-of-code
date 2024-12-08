@@ -12,4 +12,9 @@ data class Coordinate(val x: Int, val y: Int) {
                 }
             }
     }
+
+    operator fun plus(o: Coordinate) = Coordinate(
+        x = x + o.x,
+        y = y + o.y,
+    )
 }

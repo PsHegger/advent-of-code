@@ -1,5 +1,8 @@
 package io.github.pshegger.aoc
 
+import io.github.pshegger.aoc.common.Answer
+import kotlin.time.measureTime
+
 fun main(args: Array<String>) {
     SolverFactory.registerSolvers()
 
@@ -15,11 +18,12 @@ fun main(args: Array<String>) {
         return
     }
 
-    val start = System.currentTimeMillis()
-    val solution = solver.solve()
-    val duration = System.currentTimeMillis() - start
+    val solution: Answer
+    val duration = measureTime {
+        solution = solver.solve()
+    }
 
     println("Solution for ${solver.year} #${solver.day}")
     println(solution)
-    println("Found solution in ${String.format("%.3f", duration / 1000.0)} s")
+    println("Found solution in $duration")
 }
