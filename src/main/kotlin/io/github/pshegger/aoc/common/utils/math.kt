@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.utils
 
 fun extendedGCD(a: Long, b: Long): Pair<Long, Long> {
     var oldR = a
@@ -40,4 +40,13 @@ fun generateSplits(splitCount: Int, numberToSplit: Int): List<List<Int>> =
                 generateSplits(splitCount - 1, numberToSplit - a)
                     .map { listOf(a) + it }
             }
+    }
+
+fun <T> Collection<Iterable<T>>.getCartesianProduct(): Set<List<T>> =
+    if (isEmpty()) {
+        emptySet()
+    } else {
+        drop(1).fold(first().map(::listOf)) { acc, iterable ->
+            acc.flatMap { list -> iterable.map(list::plus) }
+        }.toSet()
     }

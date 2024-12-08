@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.model
 
 sealed class Answer {
     abstract val part1: String

@@ -1,7 +1,7 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.getCartesianProduct
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.utils.getCartesianProduct
 
 class Y2020D17 : BaseSolver() {
     override val year = 2020

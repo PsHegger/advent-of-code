@@ -1,6 +1,6 @@
 package io.github.pshegger.aoc
 
-import io.github.pshegger.aoc.common.BaseSolver
+import io.github.pshegger.aoc.common.model.BaseSolver
 import java.util.*
 import kotlin.reflect.full.primaryConstructor
 

@@ -1,9 +1,9 @@
 package io.github.pshegger.aoc.y2015
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.extractAll
-import io.github.pshegger.aoc.common.permutations
-import io.github.pshegger.aoc.common.toExtractor
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.extensions.extractAll
+import io.github.pshegger.aoc.common.extensions.permutations
+import io.github.pshegger.aoc.common.extensions.toExtractor
 
 class Y2015D13 : BaseSolver() {
     override val year = 2015

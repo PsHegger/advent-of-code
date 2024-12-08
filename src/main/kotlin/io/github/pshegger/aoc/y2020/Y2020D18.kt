@@ -1,6 +1,6 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
+import io.github.pshegger.aoc.common.model.BaseSolver
 
 @ExperimentalStdlibApi
 class Y2020D18 : BaseSolver() {

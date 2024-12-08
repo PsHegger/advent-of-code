@@ -1,9 +1,9 @@
 package io.github.pshegger.aoc.y2024
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.Coordinate
-import io.github.pshegger.aoc.common.Direction
-import io.github.pshegger.aoc.common.Grid
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.model.Coordinate
+import io.github.pshegger.aoc.common.model.Direction
+import io.github.pshegger.aoc.common.model.Grid
 
 class Y2024D6 : BaseSolver() {
     override val year = 2024

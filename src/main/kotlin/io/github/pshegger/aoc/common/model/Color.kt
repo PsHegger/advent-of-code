@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.model
 
 import kotlin.random.Random
 

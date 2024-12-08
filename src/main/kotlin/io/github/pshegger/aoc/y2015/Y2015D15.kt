@@ -1,9 +1,9 @@
 package io.github.pshegger.aoc.y2015
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.extractAll
-import io.github.pshegger.aoc.common.generateSplits
-import io.github.pshegger.aoc.common.toExtractor
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.extensions.extractAll
+import io.github.pshegger.aoc.common.utils.generateSplits
+import io.github.pshegger.aoc.common.extensions.toExtractor
 import kotlin.math.max
 
 class Y2015D15 : BaseSolver() {

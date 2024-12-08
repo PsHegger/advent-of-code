@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.extensions
 
 private val HEX_ARRAY = "0123456789ABCDEF".toCharArray()
 

@@ -1,7 +1,7 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.TaskVisualizer
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.model.TaskVisualizer
 import io.github.pshegger.aoc.y2020.visualization.Y2020D23Visualizer
 
 class Y2020D23 : BaseSolver() {

@@ -1,6 +1,6 @@
 package io.github.pshegger.aoc
 
-import io.github.pshegger.aoc.common.Answer
+import io.github.pshegger.aoc.common.model.Answer
 import kotlin.time.measureTime
 
 fun main(args: Array<String>) {

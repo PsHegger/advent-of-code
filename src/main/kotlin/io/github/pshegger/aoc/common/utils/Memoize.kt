@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.utils
 
 class Memoize1<in T, out R>(val f: (T) -> R) : (T) -> R {
     private val values = mutableMapOf<T, R>()

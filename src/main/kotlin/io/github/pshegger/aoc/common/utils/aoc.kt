@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.utils
 
 import java.io.File
 import java.io.FileOutputStream
@@ -34,12 +34,3 @@ fun downloadInputIfMissing(year: Int, day: Int) {
         outStream.close()
     }
 }
-
-fun <T> Collection<Iterable<T>>.getCartesianProduct(): Set<List<T>> =
-    if (isEmpty()) {
-        emptySet()
-    } else {
-        drop(1).fold(first().map(::listOf)) { acc, iterable ->
-            acc.flatMap { list -> iterable.map(list::plus) }
-        }.toSet()
-    }

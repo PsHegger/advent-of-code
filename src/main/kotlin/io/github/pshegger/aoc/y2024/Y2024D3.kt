@@ -1,7 +1,7 @@
 package io.github.pshegger.aoc.y2024
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.toExtractor
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.extensions.toExtractor
 
 class Y2024D3 : BaseSolver() {
     override val year = 2024

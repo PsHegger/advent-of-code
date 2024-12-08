@@ -1,9 +1,9 @@
 package io.github.pshegger.aoc.y2020.visualization
 
-import io.github.pshegger.aoc.common.Bitmap
-import io.github.pshegger.aoc.common.Color
-import io.github.pshegger.aoc.common.Coordinate
-import io.github.pshegger.aoc.common.TaskVisualizer
+import io.github.pshegger.aoc.common.model.Bitmap
+import io.github.pshegger.aoc.common.model.Color
+import io.github.pshegger.aoc.common.model.Coordinate
+import io.github.pshegger.aoc.common.model.TaskVisualizer
 import io.github.pshegger.aoc.y2020.Y2020D20
 
 @ExperimentalStdlibApi

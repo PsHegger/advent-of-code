@@ -1,8 +1,7 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.Coordinate
-import io.github.pshegger.aoc.common.TaskVisualizer
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.model.Coordinate
 import io.github.pshegger.aoc.y2020.visualization.Y2020D20Visualizer
 import kotlin.math.roundToInt
 import kotlin.math.sqrt

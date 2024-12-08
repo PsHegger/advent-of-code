@@ -1,7 +1,7 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.Coordinate
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.model.Coordinate
 import kotlin.math.absoluteValue
 
 class Y2020D24 : BaseSolver() {

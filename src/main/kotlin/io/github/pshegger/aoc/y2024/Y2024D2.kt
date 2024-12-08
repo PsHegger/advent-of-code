@@ -1,6 +1,6 @@
 package io.github.pshegger.aoc.y2024
 
-import io.github.pshegger.aoc.common.BaseSolver
+import io.github.pshegger.aoc.common.model.BaseSolver
 import kotlin.math.absoluteValue
 
 class Y2024D2 : BaseSolver() {

@@ -1,8 +1,8 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.TaskVisualizer
-import io.github.pshegger.aoc.common.splitByBlank
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.model.TaskVisualizer
+import io.github.pshegger.aoc.common.extensions.splitByBlank
 import io.github.pshegger.aoc.y2020.visualization.Y2020D4Visualizer
 import kotlin.math.roundToInt
 

@@ -1,6 +1,6 @@
 package io.github.pshegger.aoc.y2024
 
-import io.github.pshegger.aoc.common.BaseSolver
+import io.github.pshegger.aoc.common.model.BaseSolver
 import kotlin.math.floor
 import kotlin.math.log10
 import kotlin.math.pow

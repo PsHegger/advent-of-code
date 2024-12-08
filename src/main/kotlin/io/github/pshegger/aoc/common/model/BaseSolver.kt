@@ -1,5 +1,6 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.model
 
+import io.github.pshegger.aoc.common.utils.downloadInputIfMissing
 import java.io.File
 
 abstract class BaseSolver {

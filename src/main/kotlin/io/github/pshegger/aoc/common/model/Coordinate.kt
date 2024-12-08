@@ -1,4 +1,6 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.model
+
+import io.github.pshegger.aoc.common.utils.getCartesianProduct
 
 data class Coordinate(val x: Int, val y: Int) {
 

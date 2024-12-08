@@ -1,5 +1,6 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.extensions
 
+import io.github.pshegger.aoc.common.utils.RegExtractor
 import java.security.MessageDigest
 
 fun String.md5(): String {

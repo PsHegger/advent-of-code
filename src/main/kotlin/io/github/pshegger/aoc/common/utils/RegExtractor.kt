@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.utils
 
 class RegExtractor(searchString: String) {
 

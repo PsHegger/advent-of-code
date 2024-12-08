@@ -1,4 +1,6 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.extensions
+
+import io.github.pshegger.aoc.common.utils.RegExtractor
 
 fun <T> Iterable<T>.updated(index: Int, newValue: T) =
     mapIndexed { i, t -> if (i == index) newValue else t }

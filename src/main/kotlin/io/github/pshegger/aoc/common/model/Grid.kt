@@ -1,4 +1,4 @@
-package io.github.pshegger.aoc.common
+package io.github.pshegger.aoc.common.model
 
 class Grid<T>(val width: Int, val height: Int, init: (Int) -> T) {
 

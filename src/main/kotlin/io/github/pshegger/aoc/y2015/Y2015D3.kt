@@ -1,7 +1,7 @@
 package io.github.pshegger.aoc.y2015
 
-import io.github.pshegger.aoc.common.BaseSolver
-import io.github.pshegger.aoc.common.Coordinate
+import io.github.pshegger.aoc.common.model.BaseSolver
+import io.github.pshegger.aoc.common.model.Coordinate
 import java.lang.IllegalStateException
 
 class Y2015D3 : BaseSolver() {

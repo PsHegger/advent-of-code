@@ -1,6 +1,6 @@
 package io.github.pshegger.aoc.y2020
 
-import io.github.pshegger.aoc.common.BaseSolver
+import io.github.pshegger.aoc.common.model.BaseSolver
 
 class Y2020D15 : BaseSolver() {
     override val year = 2020
