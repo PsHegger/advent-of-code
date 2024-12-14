@@ -21,7 +21,7 @@ object SolverFactory {
         for (year in START_YEAR..currentYear) {
             for (day in 1..25) {
                 try {
-                    (Class.forName("io.github.pshegger.aoc.y$year.Y${year}D$day")
+                    (Class.forName("${SolverFactory::class.java.packageName}.y$year.Y${year}D$day")
                         .kotlin
                         .primaryConstructor
                         ?.call()
