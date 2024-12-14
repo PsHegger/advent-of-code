@@ -15,8 +15,17 @@ data class Coordinate(val x: Int, val y: Int) {
             }
     }
 
+    val cardinalNeighbours: List<Coordinate> by lazy {
+        Direction.entries.map { this + it.asCoordinate() }
+    }
+
     operator fun plus(o: Coordinate) = Coordinate(
         x = x + o.x,
         y = y + o.y,
+    )
+
+    operator fun minus(o: Coordinate) = Coordinate(
+        x = x - o.x,
+        y = y - o.y,
     )
 }

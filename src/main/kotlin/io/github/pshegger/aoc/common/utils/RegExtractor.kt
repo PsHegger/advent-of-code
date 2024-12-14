@@ -3,6 +3,9 @@ package io.github.pshegger.aoc.common.utils
 class RegExtractor(searchString: String) {
 
     private val regex = searchString
+        .replace("+", "\\+")
+        .replace("?", "\\?")
+        .replace("*", "\\*")
         .replace("%d", "(-?\\d+)")
         .replace("%s",  "(\\w+)")
         .toRegex()
